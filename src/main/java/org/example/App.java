@@ -10,12 +10,13 @@ public class App {
     public static final double constant = 350;
 
     public static void main(String[] args) {
-        // user inputs length and width for gallon computation, but since the example output does not print out
-        // the inputs/questions, you just enter the numbers in the terminal to get your answer
+        // user inputs length and width for gallon computation
         Scanner input = new Scanner(System.in);
+        System.out.print("What is the length of the room? ");
         int inputLength = Integer.parseInt(input.nextLine());
 
         Scanner input2 = new Scanner(System.in);
+        System.out.print("What is the width of the room? ");
         int inputWidth = Integer.parseInt(input2.nextLine());
 
         // math for square feet and used the .ceil method to round up answer for gallons
